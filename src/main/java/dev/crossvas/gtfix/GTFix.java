@@ -15,7 +15,7 @@ public class GTFix {
     public void postInit(FMLPostInitializationEvent e) {
         // add kanthal Dust
         GT_MetaItem_Dust.addItem(67, "Kanthal Dust", "Kanthal", "FeCrAl", false);
-        GT_MetaItem_Dust.addItem(68, "Cupronickel Dust", "Cupronickel", "FeCrAl", false);
+        GT_MetaItem_Dust.addItem(68, "Cupronickel Dust", "Cupronickel", "CuNi", false);
         // Ingots
         GT_MetaItem_Material.addItem(43, "Kanthal Ingot", "ingotKanthal", "FeCrAl", false);
         GT_MetaItem_Material.addItem(44, "Nichrome Ingot", "ingotNichrome", "Ni4Cr", false);
