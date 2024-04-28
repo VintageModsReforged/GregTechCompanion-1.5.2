@@ -1,18 +1,21 @@
 package dev.crossvas.gtfix;
 
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import gregtechmod.api.GregTech_API;
 import gregtechmod.api.util.GT_ModHandler;
 import gregtechmod.api.util.GT_OreDictUnificator;
 import gregtechmod.common.items.GT_MetaItem_Dust;
 import gregtechmod.common.items.GT_MetaItem_Material;
+import net.minecraft.util.Direction;
+import net.minecraftforge.common.ForgeDirection;
 
-@Mod(modid = "gtfix", name = "GT Fix", dependencies = "required-after:GregTech_Addon", version = "1.5.2-1.0.0-forge")
+@Mod(modid = "gtfix", name = "GT Fix", dependencies = "required-after:GregTech_Addon", version = "1.5.2-1.0.1")
 public class GTFix {
 
-    @Mod.PostInit
-    public void postInit(FMLPostInitializationEvent e) {
+    @Mod.Init
+    public void postInit(FMLInitializationEvent e) {
         // add kanthal Dust
         GT_MetaItem_Dust.addItem(67, "Kanthal Dust", "Kanthal", "FeCrAl", false);
         GT_MetaItem_Dust.addItem(68, "Cupronickel Dust", "Cupronickel", "CuNi", false);
