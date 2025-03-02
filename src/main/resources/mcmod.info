@@ -1,0 +1,9 @@
+[
+  {
+    "modid": "gtcompanion",
+    "name": "GregTech: Companion",
+    "description": "Small Companion mod that provide tweaks for GregTech mod.",
+    "version": "1.5.2-1.0.2",
+    "authors": ["CrossVas"]
+  }
+]
