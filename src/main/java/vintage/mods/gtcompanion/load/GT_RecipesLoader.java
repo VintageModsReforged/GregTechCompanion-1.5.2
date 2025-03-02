@@ -4,6 +4,7 @@ import gregtechmod.api.GregTech_API;
 import gregtechmod.api.util.GT_ModHandler;
 import gregtechmod.api.util.GT_OreDictUnificator;
 import gregtechmod.api.util.GT_Recipe;
+import net.minecraft.item.ItemStack;
 
 public class GT_RecipesLoader {
 
@@ -24,7 +25,8 @@ public class GT_RecipesLoader {
 
     public void initRemovals() {
         // remove wrong GT recipe
-        int recipeIndex = GT_Recipe.findEqualAlloySmelterRecipeIndex(GT_OreDictUnificator.get("ingotCopper", 1), GT_OreDictUnificator.get("ingotCopper", 1));
+        ItemStack copperIngot = GT_OreDictUnificator.get("ingotCopper", 1);
+        int recipeIndex = GT_Recipe.findEqualAlloySmelterRecipeIndex(copperIngot, copperIngot);
         if (recipeIndex != -1) {
             GT_Recipe.sAlloySmelterRecipes.remove(recipeIndex);
         }
